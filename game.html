@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="game.css">
+    </head>
+    <body>
+        <main class="layout--main__wrapper">
+            <div class="layout--gameboard__wrapper">
+                <div class="main__car-wrapper">
+                    <img class="main__img-car" src="imgGame/car.svg" alt="">
+                </div>
+            </div>
+            <nav class="layout--nav__wrapper">
+                <div class="ui--container">
+                    <div class="ui--row nav__wrapper">
+                        <div class="ui--col rasstoyanie">
+                            <p>Пройденный путь</p>
+                            <p class="index-rasstoyanie">00</p>
+                        </div>
+                        <div class="ui--col speed-wrapper">
+                            <p class="text-speed">СКОРОСТЬ</p>
+                            <p class="speed">00</p>
+                            <p class="kilometers">КМ/Ч</p>
+                        </div>
+                        <div class="ui--row money-gasoline">
+                            <div class="ui--col money-wrapper">
+                                <p class="money-text">ДЕНЬГИ</p>
+                                <p class="money">0</p>
+                                <p class="dollar">$</p>
+                            </div>
+                            <div class="ui--col gasoline-wrapper">
+                                <p class="gasoline-text">БЕНЗИН</p>
+                                <p class="gasoline">44</p>
+                                <p class="liters">Лит.</p>
+                            </div>
+                        </div>
+                        <div class="ui--col acceleration">
+                            <div class="ui--row gas-brake">
+                                <div>
+                                    <button class="gas">ГАЗ</button>
+                                    <button class="brake">ТОРМОЗ</button>
+                                </div>
+                            </div>
+                            <div class="ui--row gas-brake">
+                                <div>
+                                    <button class="up-arrow">
+                                        <img class="img-up__arrow" src="imgGame/XMLID_224_.svg" alt="">
+                                    </button>
+                                    <button class="arrow-down">
+                                        <img class="img-down__arrow" src="imgGame/XMLID_225_.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui--col refueling">
+                            <div class="refueling-wrapper">
+                                <input type="number" value="0" class="refueling-liters"></input>
+                                <p class="text-refueling">литров из</p>
+                                <p class="from-quantity">40</p>
+                            </div>
+                            <div>
+                                <button class="fill-the-car">ЗАПРАВИТЬ</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </main>
+        <script src="game.js"></script>
+    </body>
+</html>
